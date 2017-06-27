@@ -1,0 +1,33 @@
+[
+    {
+        "nickname": "dublug-connect",
+        "server": "irc.freenode.org",
+        "token": "BOT_TOKEN_HERE",
+        "avatarUrl": false,
+        "slackUsernameFormat": "<$username>",
+        "autoSendCommands": [
+            ["PRIVMSG", "NickServ", "IDENTIFY BOT_PASS_HERE"]
+        ],
+        "channelMapping": {
+            "#dublin-lug": "#dublug"
+        },
+        "ircOptions": {
+            "sasl": true,
+            "nick": "dublug-connect",
+            "password": "BOT_PASS_HERE",
+            "userName": "dublug-connect",
+            "floodProtection": true,
+            "floodProtectionDelay": 1000
+        },
+        "commandCharacters": ["!", "."],
+        "muteSlackbot": false,
+        "ircStatusNotices": {
+            "join": false,
+            "leave": false
+        },
+        "muteUsers": {
+            "irc": ["dublug-connect"],
+            "slack": ["dublug-connect"]
+        }
+    }
+]
